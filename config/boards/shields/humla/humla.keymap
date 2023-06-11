@@ -7,18 +7,9 @@
 #define SYM 1
 #define NUM 2
 #define NAV 3
-#define SFT &sk LSHFT
+
 
 / {
-        behaviors {
-            td0: tap_dance_0 {
-               compatible = "zmk,behavior-tap-dance";
-               label = "TAP_DANCE_0";
-               #binding-cells = <0>;
-               tapping-term-ms = <200>;
-               bindings = <&kp ESC>, <&bootloader>, <&kp ESC>;
-            };
-        };
 
         combos {
             compatible = "zmk,combos";
@@ -42,7 +33,7 @@
    &kp Q &kp W &kp E &kp R &kp T          &kp Y &kp U   &kp I     &kp O   &kp P
    &kp A &kp S &kp D &kp F &kp G          &kp H &kp J   &kp K     &kp L   &kp SEMI
    &kp Z &kp X &kp C &kp V &kp B          &kp N &kp M   &kp COMMA &kp DOT &kp FSLH
-               &mt LGUI  TAB &lt SYM SFT &kc RET &kp BSPC &lt NUM SPC &kc ESC
+               &mt LGUI  TAB &lt SYM &sk LSHFT &kc RET &kp BSPC &lt NUM SPC &kc ESC
                         >;
                 };
 
@@ -64,7 +55,7 @@
 // -------------------------------------------------------------------
 // | 1   |  2  |  3  |  4  |  5    /  \    6  |  7  |  8  |  9  |  0  | 
 // | -   |  =  |  [  |  ]  |  \   /    \  F1  | F2  | F3  | F4  | F5  | 
-// | ESC | GUI |GrALT| CAPS|  "  /      \ F6  | F7  | F8  | F9  | F10 | 
+// | ESC | GUI |GrALT| CAPS|  "  /      \ F6  | F7  | F8  | F9  |
 //             | LCTL(BKSP) | LALT | | RSE | SPC  | ADJUST |
                         bindings = <
    &kp N1    &kp N2    &kp N3    &kp N4    &kp N5        &kp N6    &kp N7    &kp N8    &kp N9    &kp N0    
@@ -85,7 +76,7 @@
    &bootloader &none &none &none &none        &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_CLR
    &none &none &none &none &none        &none &none &none &bt BT_NXT &tog DEF
    &none &none &none &none &none        &ext_power EP_TOG &none &none &none &none
-               &td0 &none &none &trans &trans &mo 3
+               &none &none &none &trans &trans &mo 3
                         >;
                 };
         };

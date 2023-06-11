@@ -5,15 +5,6 @@
 
 
 / {
-        behaviors {
-            td0: tap_dance_0 {
-               compatible = "zmk,behavior-tap-dance";
-               label = "TAP_DANCE_0";
-               #binding-cells = <0>;
-               tapping-term-ms = <200>;
-               bindings = <&kp ESC>, <&bootloader>, <&kp ESC>;
-            };
-        };
 
         keymap {
                 compatible = "zmk,keymap";
@@ -69,7 +60,7 @@
    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_CLR        &bt BT_SEL 0 &bt BT_SEL 1 &kp UP &bt BT_SEL 3 &bt BT_CLR
    &none &none &none &bt BT_NXT &bt BT_PRV                               &kp LEFT     &kp LEFT     &kp DOWN       &kp RIGHT    &to 0
    &bootloader &none &none &none &none                                         &ext_power EP_TOG &none &none &none &none
-               &td0 &none &none &trans &trans &mo 3
+               &none &none &none &trans &trans &mo 3
                         >;
                 };
         };

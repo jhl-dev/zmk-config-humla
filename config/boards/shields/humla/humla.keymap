@@ -23,7 +23,7 @@
    &kp Q &kp W &kp E &kp R &kp T          &kp Y &kp U   &kp I     &kp O   &kp P
    &kp A &kp S &kp D &kp F &kp G          &kp H &kp J   &kp K     &kp L   &kp SEMI
    &kp Z &kp X &kp C &kp V &kp B          &kp N &kp M   &kp COMMA &kp DOT &kp FSLH
-                &kp RET &sk LSHFT &lt LOW TAB &mt LCTL ESC &lt RSE SPC &mt RALT BSPC
+                &kp RET &sk LSHFT &mo LOW &mt LCTL ESC &mo RSE &mt RALT BSPC
                       >;
                 };
 
@@ -35,7 +35,7 @@
    &gresc      &kp EXCL    &kp AT   &kp HASH &kp DLLR       &kp LBKT    &kp AMPS    &kp STAR    &kp N8      &kp RBKT
    &kp MINUS   &kp KP_PLUS &kp LBRC &kp RBRC &kp PIPE       &kp LPAR    &kp DLLR   &kp PRCNT    &kp CARET   &kp RPAR
    &kp BSPC    &kp LGUI    &kp LALT &kp CLCK &kp DQT        &kp HOME    &kp EXCL   &kp AT       &kp HASH    &kp SLASH
-               &trans &trans &trans &none &trans &mo 3 
+               &trans &trans &trans &none &trans &mo ADJ 
                         >;
                 };
 
@@ -49,7 +49,7 @@
    &kp N1    &kp F7  &kp F8  &kp F9  &kp N5        &kp EQUAL    &kp N7    &kp N8    &kp N9    &kp N0    
    &kp MINUS &kp F4  &kp F5  &kp F6  &kp BSLH      &kp MINUS    &kp N4    &kp N5    &kp N6    &kp QMARK    
    &kp    &kp F1  &kp F2  &kp F3  &kp DQT       &kp F6       &kp N1    &kp N2    &kp N3    &kp F10
-             &trans &trans &none &trans &trans &mo 3
+             &trans &trans &none &trans &trans &mo ADJ
                         >;
                 };
 
@@ -62,9 +62,9 @@
 //      | TD(ESC/RESET/BOOTLOADER/ESC)|  |  | RET | SPC | ADJ
                         bindings = <
    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_CLR        &bt BT_SEL 0 &bt BT_SEL 1 &kp UP &bt BT_SEL 3 &bt BT_CLR
-   &none &none &none &bt BT_NXT &bt BT_PRV                               &kp LEFT     &kp LEFT     &kp DOWN       &kp RIGHT    &mo 0
+   &none &none &none &bt BT_NXT &bt BT_PRV                               &kp LEFT     &kp LEFT     &kp DOWN       &kp RIGHT    &mo DEF
    &bootloader &none &none &none &none                                         &ext_power EP_TOG &none &none &none &none
-               &none &none &none &trans &trans &mo 3
+               &none &none &none &trans &trans &mo DEF
                         >;
                 };
         };

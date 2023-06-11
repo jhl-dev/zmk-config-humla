@@ -1,2 +1,2 @@
 config SHIELD_HUMLA
-    def_bool $(shields_list_contains,humla)
+    def_bool $(shields_list_contains, humla)

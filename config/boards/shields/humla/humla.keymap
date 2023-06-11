@@ -42,7 +42,7 @@
    &gresc      &kp EXCL    &kp AT   &kp HASH &kp DLLR       &kp LBKT    &kp AMPS    &kp STAR    &kp N8      &kp RBKT
    &kp MINUS   &kp KP_PLUS &kp LBRC &kp RBRC &kp PIPE       &kp LPAR    &kp DLLR   &kp PRCNT    &kp CARET   &kp RPAR
    &kp BSPC    &kp LGUI    &kp LALT &kp CLCK &kp DQT        &kp HOME    &kp EXCL   &kp AT       &kp HASH    &kp SLASH
-               &trans &trans &trans &none &trans &mo 3 
+               &trans &trans &trans &none &trans &mo 3S 
                         >;
                 };
 

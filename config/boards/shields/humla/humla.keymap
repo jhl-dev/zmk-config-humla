@@ -8,7 +8,7 @@
 /{
     combos {
                 compatible = "zmk,combos";
-                combo_esc {
+                combo_nav {
                     timeout-ms = <50>;
                     key-positions = <32 35>;
                     bindings = <&to NAV>;
@@ -33,7 +33,7 @@
    &kp Q &kp W &kp E &kp R &kp T          &kp Y &kp U   &kp I     &kp O   &kp P
    &kp A &kp S &kp D &kp F &kp G          &kp H &kp J   &kp K     &kp L   &kp SEMI
    &kp Z &kp X &kp C &kp V &kp B          &kp N &kp M   &kp COMMA &kp DOT &kp FSLH
-               &mt LGUI  TAB &lt SYM &sk LSHFT &kc RET &kp BSPC &lt NUM SPC &kc ESC
+               &mt LGUI TAB &lt SYM &sk LSHFT &kc RET &kp BSPC &lt NUM SPC &kc ESC
                         >;
                 };
 

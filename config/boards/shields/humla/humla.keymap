@@ -10,7 +10,7 @@
                label = "TAP_DANCE_0";
                #binding-cells = <0>;
                tapping-term-ms = <200>;
-               bindings = <&kp ESC>, <&reset>, <&bootloader>, <&kp ESC>;
+               bindings = <&kp ESC>,  <&bootloader>, <&kp ESC>;
             };
         };
 

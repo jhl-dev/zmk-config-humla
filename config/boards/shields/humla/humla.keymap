@@ -3,6 +3,10 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
 
+#define DEF 0
+#define LOW 1
+#define RSE 2
+#define ADJ 3
 
 / {
 
@@ -19,7 +23,7 @@
    &kp Q &kp W &kp E &kp R &kp T          &kp Y &kp U   &kp I     &kp O   &kp P
    &kp A &kp S &kp D &kp F &kp G          &kp H &kp J   &kp K     &kp L   &kp SEMI
    &kp Z &kp X &kp C &kp V &kp B          &kp N &kp M   &kp COMMA &kp DOT &kp FSLH
-                &kp RET &sk LSHFT &lt 1 TAB &mt LCTL ESC &lt 2 SPC &mt RALT BSPC
+                &kp RET &sk LSHFT &lt LOW TAB &mt LCTL ESC &lt RSE SPC &mt RALT BSPC
                       >;
                 };
 

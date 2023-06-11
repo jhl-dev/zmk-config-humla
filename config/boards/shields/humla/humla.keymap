@@ -39,9 +39,9 @@
 // | BKSP| GUI | ALT | CAPS|  "  /      \ HOME| END | PGUP| PGDN|RSHFT|
 //             | LCTL(BKSP) | LALT | LWR| | SPC | ADJUST |
                         bindings = <
-   &gresc      &kp EXCL    &kp AT   &kp HASH &kp DLLR       &kp PRCNT   &kp CARET   &kp AMPS    &kp N8      &kp DEL
-   &kp MINUS   &kp KP_PLUS &kp LBRC &kp RBRC &kp PIPE       &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &kp TILDE
-   &kp BSPC    &kp LGUI    &kp LALT &kp CLCK &kp DQT        &kp HOME    &kp END     &kp PG_UP   &kp PG_DN   &kp RSHFT
+   &gresc      &kp EXCL    &kp AT   &kp HASH &kp DLLR       &kp LPAR   &kp AMPS    &kp STAR    &kp N8      &kp RPAR
+   &kp MINUS   &kp KP_PLUS &kp LBRC &kp RBRC &kp PIPE       &kp LEFT    &kp DLLR    &kp PRCNT   &kp CARET   &kp TILDE
+   &kp BSPC    &kp LGUI    &kp LALT &kp CLCK &kp DQT        &kp HOME    &kp EXCL    &kp AT   &kp HASH   &kp RSHFT
                &trans &trans &trans &none &trans &mo 3 
                         >;
                 };

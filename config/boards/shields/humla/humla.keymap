@@ -3,6 +3,12 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
 
+#define DEF 0
+#define SYM 1
+#define NUM 2
+#define NAV 3
+#define SFT &sk LSHFT
+
 / {
         behaviors {
             td0: tap_dance_0 {
@@ -14,10 +20,19 @@
             };
         };
 
+        combos {
+            compatible = "zmk,combos";
+            combo_esc {
+                timeout-ms = <50>;
+                key-positions = <32 35>;
+                bindings = <&to NAV>;
+        };
+    };
+
         keymap {
                 compatible = "zmk,keymap";
 
-                default_layer {
+                DEF {
 // --------------------------------------------------------------------
 // |  Q  |  W  |  E  |  R  |  T    /  \    Y  |  U   |  I  |  O  |  P  |
 // |  A  |  S  |  D  |  F  |  G   /    \   H  |  J   |  K  |  L  |  ;  |
@@ -27,11 +42,11 @@
    &kp Q &kp W &kp E &kp R &kp T          &kp Y &kp U   &kp I     &kp O   &kp P
    &kp A &kp S &kp D &kp F &kp G          &kp H &kp J   &kp K     &kp L   &kp SEMI
    &kp Z &kp X &kp C &kp V &kp B          &kp N &kp M   &kp COMMA &kp DOT &kp FSLH
-               &mt LCTL BSPC &kp LALT &mo 1 &mo 2 &kp SPC &mt RSHFT RET
+               &mt LGUI  TAB &lt SYM SFT &kc RET &kp BSPC &lt NUM SPC &kc ESC
                         >;
                 };
 
-                lower_layer {
+                SYM {
 // -------------------------------------------------------------------
 // |GRESC|  !  |  @  |  #  |  $    /  \    %  |  ^  |  &  |  *  | DEL |
 // |  -  |  +  |  {  |  }  | "|"  /    \  LFT | DWN |  UP | RGT |  `  |
@@ -45,7 +60,7 @@
                         >;
                 };
 
-                raise_layer {
+                NUM {
 // -------------------------------------------------------------------
 // | 1   |  2  |  3  |  4  |  5    /  \    6  |  7  |  8  |  9  |  0  | 
 // | -   |  =  |  [  |  ]  |  \   /    \  F1  | F2  | F3  | F4  | F5  | 
@@ -59,7 +74,7 @@
                         >;
                 };
 
-                adjust_layer {
+                NAV {
 // ------------------------------------------------------------------------------
 // |                                       /\              Bluetooth             |
 // |                                      /  \   BT1  | BT2 | BT3 | BT4 | BT CLR |
@@ -67,8 +82,8 @@
 // |                                    /      \ EPTOG|     |     |     |
 //      | TD(ESC/RESET/BOOTLOADER/ESC)|  |  | RET | SPC | ADJ
                         bindings = <
-   &none &none &none &none &none        &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_CLR
-   &none &none &none &none &none        &none &none &none &bt BT_NXT &bt BT_PRV
+   &bootloader &none &none &none &none        &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_CLR
+   &none &none &none &none &none        &none &none &none &bt BT_NXT &tog DEF
    &none &none &none &none &none        &ext_power EP_TOG &none &none &none &none
                &td0 &none &none &trans &trans &mo 3
                         >;

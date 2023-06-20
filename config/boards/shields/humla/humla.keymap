@@ -73,7 +73,7 @@
 //             | LCTL(BKSP) | LALT | | RSE | SPC  | ADJUST |
                         bindings = <
     &kp N1      &kp F7    &kp F8  &kp F9     &kp N5       &kp END   &kp PG_DN   &kp UP    &kp PG_UP &kp HOME    
-    &kp MINUS  &kp EQUAL &kp LBKT   &kp RBKT &kp MINUS    &kp EQUAL  &kp LPAR   &kp RPAR    &kp HASH   &kp SLASH    
+    &kp MINUS  &kp LSFT &kp LBKT   &kp RBKT &kp MINUS    &kp EQUAL  &kp LPAR   &kp RPAR    &kp HASH   &kp SLASH    
     &kp F1      &kp F2    &kp F3  &kp F4     &kp F5       &kp F6      &kp F7    &kp F8    &kp F9    &kp F10
              &trans &trans &none &trans &kp LCTL &mo 3
                         >;
@@ -94,4 +94,4 @@
                         >;
                 };
         };
-}; 
+};  

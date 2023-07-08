@@ -88,11 +88,10 @@
 //      | TD(ESC/RESET/BOOTLOADER/ESC)|  |  | RET | SPC | ADJ
                         bindings = <
     &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_CLR        &bt BT_SEL 0 &bt BT_SEL 1 &kp UP &bt BT_SEL 3 &bt BT_CLR
-    &tog 4 &tog 5 LCTL &none &bt BT_NXT &bt BT_PRV                               &kp LEFT     &kp LEFT     &kp DOWN       &kp RIGHT    &mo 0
+    &none &kt LCTL &none &bt BT_NXT &bt BT_PRV                               &kp LEFT     &kp LEFT     &kp DOWN       &kp RIGHT    &mo 0
     &bootloader &none &none &none &none                                    &ext_power EP_TOG &none &none &none &none
                &td0 &kt LCTL &none &trans &kt LSHFT &mo 3
                         >;
                 };
-        
-        };    
+        };
 };  

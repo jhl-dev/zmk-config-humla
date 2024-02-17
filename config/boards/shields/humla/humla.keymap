@@ -21,14 +21,14 @@
         };
 
         macros {
-            dquotes: dquotes {
+            squotes: squotes {
                 compatible = "zmk,behavior-macro";
                 #binding-cells = <0>;
                 bindings
-                    = <&macro_tap &kp DQT &kp DQT &kp LEFT>
+                    = <&macro_tap &kp SQT &kp SQT &kp LEFT>
                     ;
-            }
-        }
+            };
+        };
 
         combos {
             compatible = "zmk,combos";

@@ -45,9 +45,9 @@
 //             | WIN(TAB) | LSFT |RET(LWR) | BSPC(CTL) | SPC(RSE)  | ALT(ESC) |
                         bindings = <
    &kp Q &kp W &kp E &kp R &kp T          &kp Y &kp U   &kp I     &kp O   &kp P
-   &kp A &kp S &kp D &kp F &kp G          &kp H &kp J   &kp K     &kp L   &sk LSHFT
-   &kp Z &kp X &kp C &kp V &kp B          &kp N &kp M   &kp COMMA &kp DOT &kp SQT
-   &mt LGUI TAB &mo 2 &kp RET       &mt LCTL BSPC &lt 1 SPC &mt LALT ESC
+   &kp A &kp S &kp D &kp F &kp G          &kp H &kp J   &kp K     &kp L   &kp SQT 
+   &kp Z &kp X &kp C &kp V &kp B          &kp N &kp M   &kp COMMA &kp DOT &kp SEMI
+   &mt LGUI TAB &lt 2 SPC &sk LSHFT       &mt LCTL BSPC &lt 1 SPC &mt LALT ESC
                         >;
                 };
 

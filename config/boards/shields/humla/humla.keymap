@@ -72,7 +72,13 @@
                     , <&macro_release &kp LALT>
                     ;
             };
-
+            spcbk: spcbk {
+                compatible = "zmk,behavior-macro";
+                #binding-cells = <0>;
+                bindings
+                    = <&macro_tap &kp SPC &kp BSPC>
+                    ;
+            };
         };
 
         combos {
@@ -96,6 +102,11 @@
                 timeout-ms = <50>;
                 key-positions = <16 17 18>;
                 bindings = <&sk LGUI>;
+            };
+            combo_spcbk {
+                timeout-ms = <50>;
+                key-positions = <31 34>;
+                bindings = <&spcbk>;
             };
         };
 

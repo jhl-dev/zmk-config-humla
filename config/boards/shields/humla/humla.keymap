@@ -10,7 +10,7 @@
 
 #define DEFAULT 0
 #define NUM     1
-#define NAV 
+#define NAV     2
 
 
 / {
